@@ -2,107 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="description" content="WDD 231 - Course Home Page for Cliff Cummings"> -->
-    <meta name="description" content="WDD231 Home Page for Cliff Cummings">
-    <meta name="author" content="Cliff Cummings">
-    <meta name="keywords" content="WDD231 ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page">
+    <meta name="author" content="ZAGADOU DAGBAME FRANCK">
+    <link rel="icon" href="images/favorite-favicon.ico">
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Home | ZAGADOU DAGBAME FRANCK">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/panamaCity-card.jpg">
+    <meta property="og:url" content="https://demetrioaris.github.io/wdd231/index.html">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- social media meta tags -->
-    <meta property="og:title" content="WDD231 Home Page for Cliff Cummings">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="The WDD231 web page developed by Cliff Cummings.">
-    <meta property="og:image" content="https://www.provo.org/home/showpublishedimage/19660/638127512453200000">
-    <meta property="og:url" content="https://cliffcummings.github.io/wdd231/index.html#">
-
-    <!-- <link rel="stylesheet" href="styles/colors.css"> -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/course.css">
-    <link rel="stylesheet" href="styles/course-large.css">
-
+    <title>Home | ZAGADOU DAGBAME FRANCK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-
-    <!-- defer reading the scripts until the rest of the document is rendered -->
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style-small.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    <script src="scripts/main.js" defer></script>
     <script src="scripts/courses.js" defer></script>
-    <title>WDD231 - Home - Cliff Cummings</title>
+
 </head>
 
 <body>
     <header>
-        <div class="head">
-            <!-- <img src="images/photo_cliff_193_374.webp" alt="Cliff Cummings" aria-label="Cliff Cummings" id="img-head"> -->
-             <picture>
-                <source media="(min-width:650px)" srcset="images/photo_cliff_150_193.webp" >
-                <source media="(min-width:465px)" srcset="images/photo_cliff_100_128.webp">
-                <img src="images/photo_cliff_150_193.webp.webp" alt="Cliff Cummings" aria-label="Cliff Cummings" style="width:auto;">
-             </picture>
-            <h1>Clifford E. Cummings</h1>
-            <!-- <h1>WDD 231: Web Frontend Development - Cliff Cummings</h1> -->
+        <div class="contenedor">
+            <img class="avatar" src="images/phot1.jpg" alt="Demetrio Aris photo">
         </div>
-
-        <div>
-            <!-- #menu id anchor tag for hamburger icon -->
-            <!-- <a id="menu" href="#"></a> -->
-            <button type="button" id="menu" aria-label="Hamburger Button"></button>
-        </div>
-
-        <nav class="navigation">
-            <a href="./index.html" class="active" aria-label="Home"> Home </a>
-            <a href="#" aria-label="Chamber"> Chamber </a>
-            <a href="#" aria-label="GitHub"> GitHub </a>
-            <!-- <a href="https://cliffcummings.github.io/wdd231/"    target="_blank"> GitHub </a> -->
-            <a href="https://www.linkedin.com/in/cliffcummings/" target="_blank" aria-label="LinkedIn">
-                LinkedIn
-            </a>
-        </nav>
+        <h1>ZAGADOU DAGBAME FRANCK</h1>
+        <button id="menu" title="Menu"></button>
     </header>
-
-    <main id="grid-container">
-        <section class="rounded-box1">
+    <nav>
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="https://github.com/barfils03?tab=repositories" target="_blank">GitHub Profile</a></li>
+             <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn Profile</a></li> 
+            <li><a href="chamber" target="_blank">Chamber</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="courseWork-box">
             <h2>Course Work</h2>
-            <div id="course-container">
+            <ul>
+                <li>Chamber of Commerce Site Planning</li>
+                <li>Chamber of Commerce Directory Page</li>
+                <li>Chamber Home Page</li>
+                <li>Chamber Membership Application Form / Project Subject Proposal</li>
+                <li>Chamber Discover Page / Project Site Plan
+                </li>
+                <li>Individual Website Project</li>
+                <li>Final Exam Test</li>
+            </ul>
+        </section>
+        <section class="country-box">
+            <h2>yamoussoukro</h2>
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/phot3.webp">
+                <source media="(min-width: 1024px)" srcset="images/phot3.webp">
 
+                <img src="images/phot3.webp" alt="yamoussoukro" width="300" height="225">
+            </picture>
+            <p>yamoussoukro CITY</p>
+        </section>
+        <section class="certificate-box">
+            <h2>Web and Computer Programming certificate</h2>
+            <div class="boxButton">
+                <button class="courseButton" value="all" title="Filter button">All</button>
+                <button class="courseButton" value="cse" title="Filter button">CSE</button>
+                <button class="courseButton" value="wdd" title="Filter button">WDD</button>
             </div>
+            <div class="boxcertificate01 boxCourse"></div>
+            <dialog id="courses-details"></dialog>
+            <p id="totalCreditsCert01">Total Credits for Certificate 1: 0</p>
         </section>
 
-        <section class="rounded-box2">
-            <h2>Provo, Utah</h2>
-            <figure>
-                <!-- <img src="images/Utah-Provo-Map.webp" alt="Provo, Utah Map" aria-label="Provo, Utah Map" id="img-map"> -->
-                <picture>
-                    <source media="(min-width:650px)" srcset="images/Utah-Provo-Map_200_240.webp">
-                    <source media="(min-width:465px)" srcset="images/Utah-Provo-Map_150_177.webp">
-                    <img src="images/Utah-Provo-Map_200_240.webp" alt="Cliff Cummings" aria-label="Cliff Cummings" style="width:auto;">
-                 </picture>
-                <figcaption>Provo, Utah</figcaption>
-            </figure>
-        </section>
-
-        <section class="rounded-box3">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div>
-                <nav class="selector">
-                    <a href="#" id="all" aria-label="Show All Classes"> All </a>
-                    <a href="#" id="cse" aria-label="Show CSE Classes"> CSE </a>
-                    <a href="#" id="wdd" aria-label="Show WDD Classes"> WDD </a>
-                </nav>
-            </div>
-            <div class="container">
-
-            </div>
-        </section>
     </main>
-
     <footer>
-        <p id="copywrite"></p>
-        <p id="lastModified"></p>
+        <p>&copy;<span id="currentyear">Lorem</span> ZAGADOU DAGBAME FRANCK |
+            ABIDJAN</p>
+        <p id="lastModified">abj</p>
+        
     </footer>
 </body>
 
